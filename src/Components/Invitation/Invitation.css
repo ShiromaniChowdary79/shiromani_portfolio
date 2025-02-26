@@ -1,0 +1,52 @@
+.invitation-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* background-color: #000; */
+}
+
+
+.invitation h1 {
+    font-size: 24px;
+    /* color: #e91e63; */
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 20px;
+    position: relative;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.yes-btn {
+    background-color:green;
+    /* color: white; */
+    margin-right: -135px;
+    
+}
+
+/* .yes-btn:hover {
+    background-color: #ff5c8d;
+} */
+
+.no-btn {
+    background-color: red;
+    /* color: white; */
+    position: absolute;
+    left: 30px;
+    /* transition: none;  */
+    transition: background-color 0.3s ease;
+    margin-left: 50px;
+}
+

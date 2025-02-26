@@ -1,0 +1,83 @@
+.technologies-container {
+    /* border-bottom: 1px solid #2c2c2c; */
+    padding-bottom: 24px;
+  }
+  
+  .skills-title {
+    margin: 45px 0;
+    text-align: center;
+    font-size: 2.5rem;
+  }
+  
+  .skills-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+  
+  .skill-item {
+    border-radius: 16px;
+    border: 2px solid #2c2c2c;
+    padding: 10px;
+  }
+  
+  .react-icon {
+    color: #61DAFB; 
+    font-size: 3rem;
+  }
+  .node-icon {
+    color: #68A063; 
+    font-size: 3rem;
+    transition: color 0.3s;
+  }
+  .mongo-icon {
+    color: #47A248; 
+    font-size: 3rem;
+    transition: color 0.3s;
+  }
+  .sql-icon {
+    color: #00758F; 
+    font-size: 3rem;
+    transition: color 0.3s;
+  }
+  
+  .html-icon {
+    color: #E34F26; 
+    font-size: 3rem;
+    transition: color 0.3s;
+  }
+  
+  .css-icon {
+    color: #1572B6; 
+    font-size: 3rem;
+    transition: color 0.3s;
+  }
+  .tailwind-icon {
+    color: #38B2AC; 
+    font-size: 3rem;
+    transition: color 0.3s;
+  }
+  
+  .js-icon {
+    color: #F7DF1E; 
+    font-size: 3rem;
+    transition: color 0.3s;
+  }
+  .git-icon {
+    color: #181717; 
+    font-size: 3rem;
+    transition: color 0.3s;
+  }
+  .redux-icon {
+    color: #764ABC; 
+    font-size: 3rem;
+    transition: color 0.3s;
+  }
+  
+  .Bs-icon {
+    color: #563D7C; 
+    font-size: 3rem;
+    transition: color 0.3s;
+  }
