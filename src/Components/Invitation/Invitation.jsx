@@ -41,35 +41,61 @@
 // // };
 
 // export default Invitation;
+// import React, { useState } from "react";
+// import "./Invitation.css";
+
+// const Invitation = ({ onAccept }) => {
+//   const [noButtonPosition, setNoButtonPosition] = useState({ left: "0px", top: "0px" });
+
+//   const moveNoButton = () => {
+//     const randomX = Math.random() * 200 - 100; // Adjusted for better responsiveness
+//     const randomY = Math.random() * 150 - 75;
+
+//     setNoButtonPosition({ left: `${randomX}px`, top: `${randomY}px` });
+//   };
+
+//   return (
+//     <div className="invitation-screen">
+//       <div className="invitation">
+//         <h1>Are You Here to Visit My Portfolio?</h1>
+//         <div className="buttons">
+//           <button className="yes-btn" onClick={onAccept}>Yes</button>
+//           <button 
+//             className="no-btn" 
+//             onMouseEnter={moveNoButton} 
+//             style={{ transform: `translate(${noButtonPosition.left}, ${noButtonPosition.top})` }}
+//           >
+//             No
+//           </button>
+//         </div>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Invitation;
 import React, { useState } from "react";
 import "./Invitation.css";
 
 const Invitation = ({ onAccept }) => {
-  const [noButtonPosition, setNoButtonPosition] = useState({ left: "50px", top: "0px" });
+  const [noButtonPosition, setNoButtonPosition] = useState({ left: "0px", top: "0px" });
 
   const moveNoButton = () => {
-    const randomX = Math.random() * 600 - 300; // Bigger range for wilder movement
-    const randomY = Math.random() * 400 - 200;
+    const randomX = Math.random() * 200 - 100; // Adjusted for better responsiveness
+    const randomY = Math.random() * 150 - 75;
 
     setNoButtonPosition({ left: `${randomX}px`, top: `${randomY}px` });
-
-    // Extra jitter effect (optional)
-    setTimeout(() => {
-      const jitterX = Math.random() * 50 - 25;
-      const jitterY = Math.random() * 50 - 25;
-      setNoButtonPosition({ left: `${randomX + jitterX}px`, top: `${randomY + jitterY}px` });
-    }, 50); // Super fast jitter
   };
 
   return (
     <div className="invitation-screen">
       <div className="invitation">
-        <h1>Are You Here to visit my portfolio ?</h1>
+        <h1>Are You Here to Visit My Portfolio?</h1>
         <div className="buttons">
           <button className="yes-btn" onClick={onAccept}>Yes</button>
           <button 
             className="no-btn" 
-            onClick={moveNoButton} 
+            onMouseEnter={moveNoButton} 
             style={{ transform: `translate(${noButtonPosition.left}, ${noButtonPosition.top})` }}
           >
             No

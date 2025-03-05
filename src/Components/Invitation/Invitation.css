@@ -1,52 +1,75 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 .invitation-screen {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    /* background-color: #000; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  text-align: center;
 }
 
+.invitation {
+  max-width: 90%;
+  width: 400px;
+
+  padding: 20px;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 .invitation h1 {
-    font-size: 24px;
-    /* color: #e91e63; */
-    font-weight: bold;
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
 }
 
 .buttons {
-    display: flex;
-    justify-content: center;
-    gap: 100px;
-    margin-top: 20px;
-    position: relative;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
 }
 
 button {
-    font-size: 18px;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  font-size: 18px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  min-width: 120px;
+  transition: all 0.3s ease;
 }
 
 .yes-btn {
-    background-color:green;
-    /* color: white; */
-    margin-right: -135px;
-    
+  color: #4caf50;
 }
-
-/* .yes-btn:hover {
-    background-color: #ff5c8d;
-} */
 
 .no-btn {
-    background-color: red;
-    /* color: white; */
-    position: absolute;
-    left: 30px;
-    /* transition: none;  */
-    transition: background-color 0.3s ease;
-    margin-left: 50px;
+  color: #f44336;
+  position: relative;
 }
 
+button:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 600px) {
+  .buttons {
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .no-btn {
+    position: relative;
+  }
+}

@@ -47,7 +47,7 @@ const Project = () => {
              transition={{duration:1}}
              className="project-details">
               <h2 className="project-name">{project.title}</h2>
-              <h3 className="project-description">{project.description}</h3>
+              <p className="project-description">{project.description}</p>
               <div className="project-tech-container">
                 {project.technologies.map((tech, index) => (
                   <span key={index} className="project-tech">

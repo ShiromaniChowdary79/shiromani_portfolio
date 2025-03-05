@@ -1,8 +1,20 @@
-import React from 'react';
+
+import React from "react";
 import "./Technologies.css";
 import { RiReactjsLine } from "react-icons/ri";
-import { DiNodejs, DiMysql } from "react-icons/di";
-import { SiMongodb, SiRedux } from "react-icons/si";
+import { DiNodejs, DiMysql, DiJava } from "react-icons/di";
+import {
+  SiMongodb,
+  SiRedux,
+  SiNextdotjs,
+  SiPostgresql,
+  SiTypescript,
+  SiAmazonaws,
+  SiPostman,
+  SiJira,
+  SiExpress,
+  SiPython,
+} from "react-icons/si";
 import { FaHtml5, FaCss3, FaGithubSquare, FaBootstrap } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { AiOutlineJavaScript } from "react-icons/ai";
@@ -23,34 +35,36 @@ const iconVariants = (duration) => ({
 
 const Technologies = () => {
   return (
-    <div className='technologies-container'> 
-      <motion.h1 
-       whileInView={{ opacity: 1, x: 0 }}
-       initial={{ opacity: 0, x: 100 }}
-       transition={{ duration: 1}}
-      className='skills-title'>Skills</motion.h1>
+    <div className="technologies-container">
+      <motion.h1
+        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0, x: 100 }}
+        transition={{ duration: 1 }}
+        className="skills-title"
+      >
+        Skills
+      </motion.h1>
       <motion.div
         whileInView={{ opacity: 1, x: 0 }}
         initial={{ opacity: 0, x: -100 }}
         transition={{ duration: 1.5 }}
-        className='skills-wrapper'
+        className="skills-wrapper"
       >
         <motion.div
           variants={iconVariants(2.5)}
           initial="initial"
           animate="animate"
-          className='skill-item'
+          className="skill-item"
         >
-          <RiReactjsLine className='react-icon' />
+          <RiReactjsLine className="react-icon" />
         </motion.div>
-
         <motion.div
           variants={iconVariants(3.5)}
           initial="initial"
           animate="animate"
           className="skill-item"
         >
-          <SiMongodb className='mongo-icon'/>
+          <SiMongodb className="mongo-icon" />
         </motion.div>
         <motion.div
           variants={iconVariants(6)}
@@ -58,7 +72,7 @@ const Technologies = () => {
           animate="animate"
           className="skill-item"
         >
-          <DiMysql className='sql-icon'/>
+          <DiMysql className="sql-icon" />
         </motion.div>
         <motion.div
           variants={iconVariants(4.5)}
@@ -66,7 +80,7 @@ const Technologies = () => {
           animate="animate"
           className="skill-item"
         >
-          <DiNodejs className='node-icon' />
+          <DiNodejs className="node-icon" />
         </motion.div>
         <motion.div
           variants={iconVariants(5.5)}
@@ -74,7 +88,7 @@ const Technologies = () => {
           animate="animate"
           className="skill-item"
         >
-          <FaHtml5 className='html-icon'/>
+          <FaHtml5 className="html-icon" />
         </motion.div>
         <motion.div
           variants={iconVariants(4.5)}
@@ -82,7 +96,7 @@ const Technologies = () => {
           animate="animate"
           className="skill-item"
         >
-          <FaCss3 className='css-icon' />
+          <FaCss3 className="css-icon" />
         </motion.div>
         <motion.div
           variants={iconVariants(3.5)}
@@ -90,7 +104,7 @@ const Technologies = () => {
           animate="animate"
           className="skill-item"
         >
-          <RiTailwindCssFill className='tailwind-icon'/>
+          <RiTailwindCssFill className="tailwind-icon" />
         </motion.div>
         <motion.div
           variants={iconVariants(3)}
@@ -98,7 +112,7 @@ const Technologies = () => {
           animate="animate"
           className="skill-item"
         >
-          <AiOutlineJavaScript className='js-icon'/>
+          <AiOutlineJavaScript className="js-icon" />
         </motion.div>
         <motion.div
           variants={iconVariants(4)}
@@ -106,7 +120,7 @@ const Technologies = () => {
           animate="animate"
           className="skill-item"
         >
-          <FaGithubSquare className='git-icon'/>
+          <FaGithubSquare className="git-icon" />
         </motion.div>
         <motion.div
           variants={iconVariants(6)}
@@ -114,7 +128,7 @@ const Technologies = () => {
           animate="animate"
           className="skill-item"
         >
-          <SiRedux className='redux-icon' />
+          <SiRedux className="redux-icon" />
         </motion.div>
         <motion.div
           variants={iconVariants(5)}
@@ -122,11 +136,83 @@ const Technologies = () => {
           animate="animate"
           className="skill-item"
         >
-          <FaBootstrap className='Bs-icon'/>
+          <FaBootstrap className="Bs-icon" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(5.5)}
+          initial="initial"
+          animate="animate"
+          className="skill-item"
+        >
+          <DiJava className="java-icon" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(4)}
+          initial="initial"
+          animate="animate"
+          className="skill-item"
+        >
+          <SiPython className="python-icon" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(5)}
+          initial="initial"
+          animate="animate"
+          className="skill-item"
+        >
+          <SiNextdotjs className="nextjs-icon" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(3.5)}
+          initial="initial"
+          animate="animate"
+          className="skill-item"
+        >
+          <SiPostgresql className="postgres-icon" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(4.5)}
+          initial="initial"
+          animate="animate"
+          className="skill-item"
+        >
+          <SiTypescript className="typescript-icon" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(4)}
+          initial="initial"
+          animate="animate"
+          className="skill-item"
+        >
+          <SiAmazonaws className="aws-icon" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(3.5)}
+          initial="initial"
+          animate="animate"
+          className="skill-item"
+        >
+          <SiPostman className="postman-icon" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(5)}
+          initial="initial"
+          animate="animate"
+          className="skill-item"
+        >
+          <SiJira className="jira-icon" />
+        </motion.div>
+        <motion.div
+          variants={iconVariants(4)}
+          initial="initial"
+          animate="animate"
+          className="skill-item"
+        >
+          <SiExpress className="express-icon" />
         </motion.div>
       </motion.div>
     </div>
   );
-}
+};
 
 export default Technologies;
