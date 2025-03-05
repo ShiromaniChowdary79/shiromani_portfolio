@@ -19,3 +19,48 @@
   line-height: 1.5rem;
   text-align: center;
 }
+
+@media (max-width: 1024px) {
+  .about-title {
+    font-size: 2.5rem;
+  }
+
+  .about-content {
+    max-width: 75%;
+  }
+
+  .about-text {
+    font-size: 0.95rem;
+    line-height: 1.4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .about-content {
+    max-width: 90%;
+  }
+
+  .about-text {
+    font-size: 0.9rem;
+    line-height: 1.3rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .about-content {
+    max-width: 95%;
+  }
+
+  .about-text {
+    font-size: 0.85rem;
+    line-height: 1.2rem;
+  }
+}

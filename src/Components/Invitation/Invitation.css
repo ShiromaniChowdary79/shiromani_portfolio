@@ -15,9 +15,7 @@
 .invitation {
   max-width: 90%;
   width: 400px;
-
   padding: 20px;
-
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -58,9 +56,9 @@ button {
   position: relative;
 }
 
-button:hover {
+/* button:hover {
   opacity: 0.8;
-}
+} */
 
 @media (max-width: 600px) {
   .buttons {
